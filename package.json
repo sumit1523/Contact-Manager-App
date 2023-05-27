@@ -1,0 +1,26 @@
+{
+  "name": "contact-manager-app",
+  "version": "1.0.0",
+  "description": "contact manager app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sumit1523/Contact-Manager-App.git"
+  },
+  "author": "sumit kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sumit1523/Contact-Manager-App/issues"
+  },
+  "homepage": "https://github.com/sumit1523/Contact-Manager-App#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  }
+}
