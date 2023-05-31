@@ -13,25 +13,25 @@ const errorHandler = (err, req, res, next) => {
       break;
     case constant.UNAUTHORIZED:
       res.json({
-        title: "UNAUTHORIZED",
+        title: "Unauthorized",
         message: err.message,
         stackTrace: err.stack,
       });
     case constant.FORBIDDEN:
       res.json({
-        title: "FORBIDDEN",
+        title: "Forbidden",
         message: err.message,
         stackTrace: err.stack,
       });
-    case NOT_FOUND:
+    case constant.NOT_FOUND:
       res.json({
         title: "Not Found",
         message: err.message,
         stackTrace: err.stack,
       });
-    case constant.SERVER_ERROR:
+    case constant.INTERNAL_SERVER_ERROR:
       res.json({
-        title: "SERVER_ERROR",
+        title: "Internal Server Error",
         message: err.message,
         stackTrace: err.stack,
       });
